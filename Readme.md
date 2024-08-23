@@ -50,7 +50,7 @@ To run this project locally, follow these steps:
 
 For a quick overview and demonstration of how to use Karbon, please watch the following video:
 
-[![Karbon Video]]([https://www.youtube.com/watch?v=YourVideoID](https://www.loom.com/share/c351557fa3fb455ba7cba7ee4bed78a6?sid=3c8b133b-6734-4339-a84b-5c2ac308cde1))
+[![Karbon Video]](https://www.loom.com/share/c351557fa3fb455ba7cba7ee4bed78a6?sid=3c8b133b-6734-4339-a84b-5c2ac308cde1)
 
 
 ## Contact
