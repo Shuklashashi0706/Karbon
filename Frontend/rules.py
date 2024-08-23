@@ -165,17 +165,17 @@ def iscr(data: dict, financial_index: int) -> float:
     - float: The ISCR value.
     """
     try:
-        # Access the necessary financial values from the data
-        profit_before_interest_and_tax = data["financials"][financial_index]["pnl"]["lineItems"]["profit_before_interest_and_tax"]
-        interest_expense = data["financials"][financial_index]["pnl"]["lineItems"].get("interest", 0)
-        depreciation = data["financials"][financial_index]["pnl"]["depreciation_breakup"].get("depreciation_and_amortization", 0)
-        
-        # Calculate ISCR
+        print(f"Accessing data['financials'][{financial_index}]['pnl']...")
+        pnl = data["financials"][financial_index]["pnl"]
+        print(f"pnl: {pnl}")
+        profit_before_interest_and_tax = pnl["lineItems"]["profit_before_interest_and_tax"]
+        interest_expense = pnl["lineItems"].get("interest", 0)
+        depreciation = pnl["depreciation_breakup"].get("depreciation_and_amortization", 0)
+
         iscr_value = (profit_before_interest_and_tax + depreciation + 1) / (interest_expense + 1)
-        
         return iscr_value
-    except (KeyError, IndexError):
-        # Return 0 if any key is missing or index is out of range
+    except (KeyError, IndexError) as e:
+        print(f"Error occurred: {e}")
         return 0.0
 
 

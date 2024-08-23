@@ -11,6 +11,7 @@ def probe_model_5l_profit(data: dict):
     :return: A dictionary with the evaluated flag values.
     """
     lastest_financial_index_value = latest_financial_index(data)
+    print(lastest_financial_index_value)
     total_revenue_5cr_flag_value = total_revenue_5cr_flag(
         data, lastest_financial_index_value
     )
@@ -33,7 +34,7 @@ def probe_model_5l_profit(data: dict):
 if __name__ == "__main__":
     # data = json.loads("t.json")
     # print(data)
-    with open("Backend/data/data.json", "r") as file:
+    with open("data.json", "r") as file:
         content = file.read()
         # convert to json
         data = json.loads(content)
