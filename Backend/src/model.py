@@ -33,7 +33,7 @@ def probe_model_5l_profit(data: dict):
 if __name__ == "__main__":
     # data = json.loads("t.json")
     # print(data)
-    with open("data/data.json", "r") as file:
+    with open("Backend/data/data.json", "r") as file:
         content = file.read()
         # convert to json
         data = json.loads(content)
