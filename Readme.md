@@ -1,3 +1,5 @@
+## Deployment
+[![Karbon Websilte Link]](https://shuklashashi0706-karbon-frontendapp-z6mzll.streamlit.app/)
 
 ## Features
 
@@ -48,7 +50,7 @@ To run this project locally, follow these steps:
 
 For a quick overview and demonstration of how to use Karbon, please watch the following video:
 
-[![Karbon Video](https://img.youtube.com/vi/YourVideoID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YourVideoID)
+[![Karbon Video]](https://www.youtube.com/watch?v=YourVideoID)
 
 
 ## Contact
